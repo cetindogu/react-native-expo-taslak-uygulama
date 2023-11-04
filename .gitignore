@@ -1,3 +1,26 @@
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
 # Logs
 logs
 *.log
@@ -78,6 +101,7 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
+
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
