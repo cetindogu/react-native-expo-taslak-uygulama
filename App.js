@@ -3,6 +3,7 @@ import HomeScreen from "./Screens/Home";
 import NotificationScreen from "./Screens/Notification";
 import ProfileScreen from "./Screens/Profile";
 import SearchScreen from "./Screens/Search";
+import SettingsScreen from "./Screens/Settings";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -57,6 +58,15 @@ export default function App() {
                 color={color}
                 size={26}
               />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Ayarlar"
+          component={SettingsScreen} // Profile Screen
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="apps" color={color} size={26} />
             ),
           }}
         />
